@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Movies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <header id="header" class="header_center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-sm-12 offset-md-0">
+                    <h1>Movies rating tool</h1>
+                    <div class="search">
+                        <label for="search">
+                            <input type="text" name="search" id="search" placeholder="Enter movie name...">
+                        </label>
+                        <button type="button" class="btn btn-danger btn-search">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row col-md-12">
+            <div class="search-result-wrap hide">
+                <h2>Results for: <span class="search-querystring"></span></h2>
+                <div class="search-result"></div>
+                <div id="pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay">
+        <div class="close-modal">+</div>
+        <div class="modal">
+
+        </div>
+    </div>
+
+    <div id="preloader" class="hide"></div>
+
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
